@@ -15,13 +15,13 @@ void main() {
 	int inputNum;
 
 	printf("Enter operation number: ");
-	scanf_s("%1o", &inputNum);
+	scanf_s("%1o", &inputNum);			//takes user input for what function they want to use
 
 	switch (inputNum)
 	{
-	case 1:
+	case 1:				
 		add();
-	case 2:
+	case 2:					//user input chooses which case
 		subtract();
 	}
 
@@ -42,21 +42,21 @@ void printOptions() {
 void add() {
 	double num1, num2, result;
 	printf("Enter the first value:");
-	scanf_s("%lf", &num1);
+	scanf_s("%lf", &num1);				//user inputs the 2 numbers they would like to use in this equation
 	printf("Enter the second value:");
 	scanf_s("%lf", &num2);
-	result = num1 + num2;
-	printf("%lf + %lf = %lf\n", num1, num2, result);
+	result = num1 + num2;			//adds them
+	printf("%lf + %lf = %lf\n", num1, num2, result);	
 	exit(); 
 }
 
 void subtract() {
 	double num1, num2, result;
 	printf("Enter the first value:");
-	scanf_s("%lf", &num1);
+	scanf_s("%lf", &num1);				//user inputs the 2 numbers they would like to use in this equation
 	printf("Enter the second value:");
 	scanf_s("%lf", &num2);
-	result = num1 - num2;
+	result = num1 - num2;		//subtracts them
 	printf("%lf - %lf = %lf\n", num1, num2, result);
 	exit();
 }
